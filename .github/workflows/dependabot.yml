@@ -7,7 +7,7 @@ on:
 
 jobs:
   print-versions:
-    name: Print current package versions
+    name: Print workspace
     runs-on: ubuntu-latest
     steps:
-      - run: dpkg -l | grep ii
+      - run: echo $GITHUB_WORKSPACE
