@@ -1,0 +1,14 @@
+name: Dependabot Actions
+on:
+  pull_request:
+    types: [opened, ready_for_review]
+    branches:
+      - "dependabot/**"
+
+jobs:
+  print-versions:
+    name: Print current package versions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@latest
+        run: dpkg -l | grep ii
