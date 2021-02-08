@@ -10,5 +10,4 @@ jobs:
     name: Print current package versions
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@latest
-        run: dpkg -l | grep ii
+      - run: dpkg -l | grep ii
