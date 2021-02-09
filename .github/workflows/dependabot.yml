@@ -1,6 +1,7 @@
 name: Dependabot Actions
 on:
-  workflow_dispatch:
+  pull_request:
+    branches: dependabot
 jobs:
   print-versions:
     name: Print current package versions
