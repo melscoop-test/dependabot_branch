@@ -2,8 +2,7 @@ name: Dependabot Actions
 on:
   pull_request: 
     types: [opened, ready_for_review]
-    branches: 
-      - dependabot/**
+    branches: ['dependabot/**']
 jobs:
   print-versions:
     name: Print current package versions
